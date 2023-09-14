@@ -61,10 +61,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse custom-nav justify-content-end"
-          id="navbarNav"
-        >
+        <div class="collapse navbar-collapse custom-nav" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -99,10 +96,8 @@
     <section class="hero-section bg-color-white">
       <div class="container py-5">
         <div class="row">
-          <div class="col-6">
-            <div
-              class="d-flex align-items-start flex-column justify-content-center h-100 intro"
-            >
+          <div class="col-sm-6 col-12">
+            <div class="h-100 intro">
               <h1>Omega Electricals</h1>
               <p>Quality Cables, Uninterrupted Connections.</p>
               <div>
@@ -110,7 +105,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-sm-6 col-12">
             <div class="d-flex align-items-center hero-img">
               <img src="./assets/images/hero-img.png" class="img-fluid" />
             </div>
@@ -122,7 +117,7 @@
     <!-- 2 - Advantages / Company Profile  -->
 
     <section class="bg-color-skyblue">
-      <div class="container p-5">
+      <div class="container py-5">
         <div class="text-center custom-company mb-5">
           <h1 class="mb-3">Company Profile</h1>
           <p class="fs-6">
@@ -136,9 +131,7 @@
             electrical and power distribution needs."
           </p>
         </div>
-        <div
-          class="row row-cols-4 text-center justify-content-center custom-profile"
-        >
+        <div class="row row-cols-sm-4 row-cols-2 custom-profile">
           <div class="col">
             <div class="custom-icon">
               <img
@@ -201,14 +194,14 @@
     <!-- 3 - Why Choose Us -->
 
     <section class="bg-color-white">
-      <div class="container p-5">
+      <div class="container py-5">
         <div class="row">
           <div class="col custom-manuf">
             <img src="/assets/images/Whychooseus.jpg" alt="" />
           </div>
           <div class="col custom-why">
-            <h1 class="custom-blue mb-3">Why Choose Us ?</h1>
-            <p class="mb-5">
+            <h1 class="custom-blue mb-sm-3 mb-2">Why Choose Us ?</h1>
+            <p class="mb-sm-5 mb-4">
               Strength in Every Strand, Trust in Every Connection.
             </p>
             <div class="row row-cols-2 g-3">
@@ -245,12 +238,12 @@
     <!-- 4 - Manufacturing Process -->
 
     <section class="bg-color-skyblue">
-      <div class="container p-5">
+      <div class="container py-5">
         <div class="mfg">
-          <p class="custom-blue text-center mb-1">LET'S GET STARTED</p>
-          <h3 class="text-center mb-5">Our Three Step Procedure</h3>
+          <p class="custom-blue text-center mb-sm-1 mb-0">LET'S GET STARTED</p>
+          <h3 class="text-center mb-sm-5 mb-3">Our Three Step Procedure</h3>
         </div>
-        <div class="row row-cols-3">
+        <div class="row row-cols-sm-3 row-cols-1 custom-mfg-card gy-sm-0 gy-2">
           <div class="col custom-card">
             <div class="card">
               <div class="custom-card-img">
@@ -329,14 +322,14 @@
       </div>
     </section>
 
-    <!-- 5 - Products -->
+    <!-- 5 - Products for Desktop-View -->
 
-    <section class="bg-color-white">
-      <div class="container p-5">
+    <section class="bg-color-white custom-desktop">
+      <div class="container py-5">
         <div class="">
           <p class="text-center products mb-5">Products</p>
         </div>
-        <div id="carouselExampleControls" class="carousel">
+        <div id="productsDesktopView" class="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row row-cols-3">
@@ -511,7 +504,7 @@
           <button
             class="carousel-control-prev"
             type="button"
-            data-bs-target="#carouselExampleControls"
+            data-bs-target="#productsDesktopView"
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -520,7 +513,124 @@
           <button
             class="carousel-control-next"
             type="button"
-            data-bs-target="#carouselExampleControls"
+            data-bs-target="#productsDesktopView"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products - for Mobile View -->
+
+    <section class="bg-color-white custom-mobile">
+      <div class="container py-5">
+        <div class="">
+          <p class="text-center products mb-1">Products</p>
+        </div>
+        <div id="productsMobileView" class="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card custom-card-pro">
+                <img
+                  src="/assets/images/products/Aluminium Conductor Steel Reinforced.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">Aluminium Conductor Steel Reinforced</p>
+                  <div>
+                    <button class="btn btn-custom-blue btn-custom-products">
+                      More Information
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card custom-card-pro">
+                <img
+                  src="/assets/images/products/Industrial Cables.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">Industrial Cables</p>
+                  <div>
+                    <button class="btn btn-custom-blue btn-custom-products">
+                      More Information
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card custom-card-pro">
+                <img
+                  src="/assets/images/products/LT & HT PVC Cables.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">LT & HT PVC Cables</p>
+                  <div>
+                    <button class="btn btn-custom-blue btn-custom-products">
+                      More Information
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card custom-card-pro">
+                <img
+                  src="/assets/images/products/LT & HT XLPE Cables.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">LT & HT XLPE Cables</p>
+                  <div>
+                    <button class="btn btn-custom-blue btn-custom-products">
+                      More Information
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card custom-card-pro">
+                <img
+                  src="/assets/images/products/XLPE Control Cables.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">XLPE Control Cables</p>
+                  <div>
+                    <button class="btn btn-custom-blue btn-custom-products">
+                      More Information
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#productsMobileView"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#productsMobileView"
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -533,12 +643,12 @@
     <!-- 6 - Customer Reviews -->
 
     <section class="bg-color-skyblue">
-      <div class="container p-5">
+      <div class="container py-5">
         <div class="reviews">
           <p>Our Testimonilas</p>
           <h2>What Our Customer Says</h2>
         </div>
-        <div class="row row-cols-3">
+        <div class="row row-cols-sm-3 row-cols-1 custom-rev-com gy-sm-0 gy-3">
           <div class="col">
             <div class="shadow p-3 mb-4 rounded oneandonlydiv comments">
               <p>
@@ -597,12 +707,12 @@
     <!-- 7 - Contact Us -->
 
     <section class="bg-color-white" id="contact-us">
-      <div class="container p-5">
+      <div class="container py-5">
         <div class="custom-contact-us">
           <h1>Contact Us</h1>
         </div>
-        <div class="row row-cols-2">
-          <div class="col">
+        <div class="row row-cols-sm-2 row-cols-1">
+          <div class="col d-none d-sm-block">
             <img
               src="/assets/images/contact-us.jpg"
               alt=""
@@ -679,9 +789,9 @@
     <!-- 8 - Footer -->
 
     <section class="bg-color-skyblue">
-      <div class="container p-5">
-        <div class="row row-cols-2 p-2">
-          <div class="col">
+      <div class="container py-5">
+        <div class="row row-cols-sm-2 row-cols-1 p-2 custom-footer-no">
+          <div class="col order-sm-1 order-2">
             <div class="custom-footer">
               <div class="custom-fot">
                 <img src="/assets/images/logo.png" alt="" />
@@ -712,8 +822,8 @@
             </div>
           </div>
 
-          <div class="col">
-            <div class="row row-cols-2">
+          <div class="col order-sm-2 order-1">
+            <div class="row row-cols-2 custom-link-ser">
               <div class="col">
                 <div class="custom-links">
                   <h3>Links</h3>
@@ -754,3 +864,16 @@
     </section>
   </body>
 </html>
+
+<!-- Card ma thi image kaadhvaani che
+image maa kadi heigth width nai aapvani bnne jode nai aapvani one at a time as per necessicity
+
+
+products ma phone ane laptop nu aakhu alag section display none
+
+order vaalu krvanu che
+height width kaadhi devanu
+contact us na font mota
+testimonial desk ma margin kaadhine bottom ane left thijjj ramvaanu ane phone view ma centre
+ manuf Card thoda naana ane sarkhaa phone maate
+-->

@@ -19,15 +19,15 @@ body {
   display: flex;
   /* width: 234px;
   height: 71px; */
-  padding: 20px 35px;
+  padding: 10px 15px;
   color: #ffffff;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
   background: #36689e;
   /* box-shadow: 12px 12px 24px 0px rgba(0, 0, 0, 0.1); */
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .btn-custom-blue:hover {
@@ -39,7 +39,11 @@ body {
 /* NavBar */
 
 .navbar-brand img {
-  height: 76px;
+  height: 50px;
+}
+
+.custom-nav {
+  text-align: -webkit-right;
 }
 
 /* Newwww only justify-content space evenly old */
@@ -58,9 +62,17 @@ body {
   background-image: url("./assets//images/hero-bg.png");
 }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .hero-section .intro h1 {
   font-size: 42px;
-  font-weight: 800;
+  font-weight: 500;
   line-height: 65px; /* 154.762% */
   margin-bottom: 21px;
   text-transform: uppercase;
@@ -91,25 +103,29 @@ body {
 .custom-company h1 {
   color: #282828;
   text-align: center;
-  font-family: Inter;
   font-size: 42px;
-  font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 52px; /* 123.81% */
   letter-spacing: 0.42px;
   text-transform: capitalize;
 }
 
 .custom-profile {
-  margin-top: 100px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 0px;
   margin-bottom: 40px;
 }
 
 .btn-custom-blue.custom-info {
   margin: auto;
-  padding: 10px;
-  font-size: 18px;
+  padding: 5px;
+  font-size: 14px;
   font-weight: 400;
+}
+
+.custom-profile .fs-5 {
+  font-size: 12px !important  ;
 }
 
 /* 3 - Why Choose Us */
@@ -117,19 +133,15 @@ body {
 .custom-points {
   color: #000;
   font-family: Space Grotesk;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font-size: 12px;
+  font-weight: 200;
 }
 
 .custom-why h1 {
   color: #36689e;
   font-family: Roboto;
-  font-size: 40px;
-  font-style: normal;
+  font-size: 30px;
   font-weight: 700;
-  line-height: normal;
 }
 
 .fa-regular.fa-circle-check {
@@ -139,28 +151,39 @@ body {
 .custom-why p {
   color: rgba(0, 0, 0, 0.81);
   font-family: Roboto;
-  font-size: 15px;
-  font-style: normal;
+  font-size: 12px;
   font-weight: 500;
-  line-height: normal;
+
   letter-spacing: 0.45px;
 }
 
+.custom-manuf {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+
 .custom-manuf img {
-  height: 300px;
-  width: 490px;
+  height: 240px;
+
+  width: 360px;
   border-radius: 0px 95px;
 }
 
 /* 4 - Manufacturing Process */
+
+.custom-mfg-card {
+  text-align: -webkit-center;
+}
 
 .custom-card .card {
   display: flex;
   text-align: center;
   justify-content: space-between;
   /* gap: 200px; */
-  height: 420px;
-  width: 350px;
+  height: auto;
+  width: 300px;
+  margin-bottom: 20px;
 }
 
 .custom-card-img:first-child {
@@ -169,17 +192,14 @@ body {
 }
 
 .custom-card .card img {
-  height: 222px;
-  width: 180px;
+  height: 200px;
 }
 
 .mfg h3 {
   color: #282828;
   text-align: center;
-  font-family: Inter;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 600;
+  font-size: 26px;
+  font-weight: 700;
   line-height: 52px; /* 123.81% */
   letter-spacing: 0.42px;
   text-transform: capitalize;
@@ -188,8 +208,7 @@ body {
 .mfg p {
   color: #36689e;
   font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
+  font-size: 12px;
   font-weight: 700;
   line-height: 28px; /* 155.556% */
   text-transform: uppercase;
@@ -199,7 +218,6 @@ body {
   color: #36689e;
   font-family: Roboto;
   font-size: 26px;
-  font-style: normal;
   font-weight: 500;
   line-height: 30px; /* 115.385% */
 }
@@ -211,7 +229,6 @@ body {
   /* Paragraph/14px - 24px line height */
   font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
   margin-top: 10px;
@@ -225,7 +242,6 @@ body {
   /* Paragraph/14px - 24px line height */
   font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
   text-decoration: none;
@@ -258,13 +274,15 @@ body {
 
 /* 5 - Products */
 
+.custom-desktop {
+  display: none;
+}
+
 .products {
   color: #282828;
   text-align: center;
-  font-family: Inter;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 600;
+  font-size: 26px;
+  font-weight: 700;
   line-height: 52px; /* 123.81% */
   letter-spacing: 0.42px;
   text-transform: capitalize;
@@ -278,6 +296,7 @@ body {
 
 .custom-card-pro {
   text-align: center;
+  margin: 24px 40px;
 }
 
 .custom-card-pro p {
@@ -285,7 +304,6 @@ body {
   text-align: center;
   font-family: Roboto;
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
   line-height: 40px; /* 160% */
   text-transform: capitalize;
@@ -305,13 +323,13 @@ body {
 
 .carousel-control-prev {
   position: absolute;
-  left: -120px;
+  left: 0px;
   width: 10%;
 }
 
 .carousel-control-next {
   position: absolute;
-  right: -120px;
+  right: 0px;
   width: 10%;
 }
 
@@ -321,35 +339,36 @@ body {
 
 /* 6 - Customer Reviews  */
 
+.custom-rev-com {
+  display: grid;
+  justify-content: center;
+}
+
 .reviews p {
   color: #36689e;
   font-family: Roboto;
   text-align: center;
-  font-size: 18px;
-  font-style: normal;
+  font-size: 16px;
   font-weight: 700;
   line-height: 28px; /* 155.556% */
   text-transform: uppercase;
+  margin-bottom: -4px;
 }
 
 .reviews h2 {
   color: #282828;
   text-align: center;
-  font-family: Inter;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 600;
+  font-size: 26px;
+  font-weight: 700;
   line-height: 52px; /* 123.81% */
   letter-spacing: 0.42px;
   text-transform: capitalize;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 
 .comments p {
   color: var(--slate-gray-pg-color, #7c8893);
-  font-family: Inter;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 26px; /* 162.5% */
   width: 273px;
@@ -398,11 +417,9 @@ body {
 
 .custom-customer p:first-child {
   color: #36689e;
-  font-family: Inter;
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
+
   width: 127px;
   height: 22px;
   top: 357px;
@@ -411,11 +428,9 @@ body {
 
 .custom-customer p:last-child {
   color: var(--Secondary-Colour, #0d263b);
-  font-family: Inter;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
+
   width: 55px;
   height: 17px;
   top: 385px;
@@ -427,45 +442,40 @@ body {
 .custom-contact-us h1 {
   color: #282828;
   text-align: center;
-  font-family: Inter;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 600;
+  font-size: 26px;
+  font-weight: 700;
   line-height: 52px; /* 123.81% */
   letter-spacing: 0.42px;
   text-transform: capitalize;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .custom-con-det h3 {
   color: var(--text-color, #252b42);
   font-family: Roboto;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 500;
+
+  margin-bottom: 12px;
 }
 
 .custom-con-det p {
   color: #858585;
   font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 140%; /* 28px */
-  margin-bottom: 62px;
+  margin-bottom: 40px;
 }
 
 .form-floating {
-  margin-bottom: 30px;
+  margin-bottom: 6px;
 }
 
 .form-floating .floatingInput {
   color: var(--Neutral-5, #858c94);
   font-family: Roboto;
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
   line-height: 140%; /* 25.2px */
 }
@@ -475,16 +485,21 @@ body {
   font-size: 18px;
   font-weight: 400;
   padding: 5px 10px;
+  translate: 100%;
+  margin-top: 26px;
 }
 
 /* Footer */
+
+.custom-link-ser {
+  display: flex;
+}
 
 .custom-fot p {
   color: #535353;
   text-align: justify;
   font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.98px;
@@ -504,17 +519,14 @@ body {
 }
 
 .custom-footer {
-  width: 454px;
   height: 240px;
 }
 
 .custom-links h3 {
   color: #1e1e1e;
-  font-family: Inter;
   font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: 700;
+
   margin-bottom: 30px;
 }
 
@@ -522,19 +534,16 @@ body {
   color: #535353;
   font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
+
   margin-bottom: 30px;
 }
 
 .custom-services h3 {
   color: #1e1e1e;
-  font-family: Inter;
   font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: 700;
+
   margin-bottom: 30px;
 }
 
@@ -542,9 +551,8 @@ body {
   color: #535353;
   font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
+
   margin-bottom: 30px;
 }
 
@@ -557,9 +565,7 @@ body {
   text-align: center;
   font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .custom-links a {
@@ -573,4 +579,189 @@ body {
 .custom-social {
   font-size: 20px;
   color: black;
+}
+
+/*  Mobile Responsive */
+
+/* Nav-Bar */
+
+@media only screen and (min-width: 576px) {
+  /* Common classes */
+
+  .btn-custom-blue {
+    display: flex;
+    /* width: 234px;
+    height: 71px; */
+    padding: 20px 35px;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #36689e;
+    /* box-shadow: 12px 12px 24px 0px rgba(0, 0, 0, 0.1); */
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .navbar-brand img {
+    height: 76px;
+  }
+  .custom-nav {
+    justify-content: end;
+  }
+
+  .navbar-nav .btn-custom-nav {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  /* Hero-section */
+
+  .intro {
+    align-items: start;
+    justify-content: center;
+  }
+  .hero-section .intro h1 {
+    font-weight: 800;
+  }
+
+  /* 2-page */
+
+  .custom-profile {
+    margin-top: 100px;
+  }
+
+  .custom-profile .fs-5 {
+    font-size: 1.25rem !important;
+  }
+  .btn-custom-blue.custom-info {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  /* 3-page */
+  .custom-manuf img {
+    height: 300px;
+    width: 490px;
+  }
+
+  .custom-why h1 {
+    font-size: 40px;
+  }
+
+  .custom-why p {
+    font-size: 14px;
+  }
+
+  .custom-points {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  /* 4-Page */
+
+  .mfg p {
+    font-size: 18px;
+
+    font-weight: 700;
+  }
+
+  .custom-card .card img {
+    height: 222px;
+  }
+
+  .custom-card .card {
+    height: 420px;
+    width: auto;
+  }
+
+  .mfg h3 {
+    font-size: 42px;
+
+    font-weight: 700;
+  }
+
+  .custom-card .card {
+    width: 350px;
+    margin-bottom: 0px;
+  }
+
+  /* 5-page */
+
+  .custom-mobile {
+    display: none;
+  }
+
+  .custom-desktop {
+    display: block;
+  }
+
+  .custom-card-pro {
+    margin: auto;
+  }
+
+  .products {
+    font-size: 42px;
+  }
+
+  .carousel-control-prev {
+    left: -120px;
+  }
+
+  .carousel-control-next {
+    right: -120px;
+  }
+
+  /* 6-page */
+
+  .custom-rev-com {
+    display: flex;
+  }
+
+  .reviews p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  .reviews h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 48px;
+  }
+
+  /* 7-page */
+
+  .custom-contact-us h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+
+  .custom-con-det h3 {
+    font-size: 34px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+  }
+
+  .custom-con-det p {
+    font-size: 20px;
+    font-weight: 500;
+
+    margin-bottom: 62px;
+  }
+
+  .form-floating {
+    margin-bottom: 30px;
+  }
+
+  .btn-subscibe {
+    font-size: 22px;
+    translate: none;
+    margin-top: 50px;
+    padding: 5px 10px;
+  }
+
+  /* 8-page */
 }
